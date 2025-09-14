@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.form-bg {
+    background-image: url('img.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.15;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: -1;
+}
+.wrapper {
+    max-width: 980px;
+    margin: 38px auto;
+    background: rgba(255,255,255,0.98);
+    border-radius: 16px;
+    box-shadow: 0 0 40px #d32f2f43;
+    padding: 34px 38px 18px 38px;
+}
+
+.donor-form h2 {
+    text-align: center;
+    color: #D32F2F;
+    margin-bottom: 20px;
+    font-size: 2.05rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.columns {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 38px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-group { 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+}
+input[type="radio"] {
+    accent-color: #E57373;
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+}
+label {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline;
+}
+input[type="text"], input[type="number"], input[type="date"], input[type="email"], select, textarea, input[type="password"] {
+    border-radius: 7px;
+    border: 1.2px solid #eee;
+    padding: 9px 14px;
+    font-size: 16px;
+    background: #fff;
+    box-shadow: 0 1px 5px #efefef;
+    transition: border 0.2s;
+}
+input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="email"]:focus, select:focus, textarea:focus, input[type="password"]:focus {
+    border: 1.2px solid #d32f2f69;
+}
+textarea {
+    min-height: 40px; max-height: 80px;
+    resize: vertical;
+    padding-right: 8px;
+    overflow-y: auto;
+}
+select {
+    background: #fff;
+    max-width: 180px;
+}
+.double {
+    display: flex;
+    gap: 14px;
+}
+.double > div {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+}
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.input-icon input {
+    width: 100%;
+    padding-right: 34px;
+}
+.icon-eye {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #D32F2F;
+    z-index: 2;
+}
+.submit-row {
+    text-align: center;
+    margin-top: 20px;
+}
+button[type="submit"] {
+    background: #D32F2F;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 0;
+    width: 65%;
+    box-shadow: 0 1px 6px #ec7d7d25;
+    cursor: pointer;
+    transition: background 0.22s;
+}
+button[type="submit"]:hover {
+    background: #C62828;
+}
+
+@media(max-width:950px){
+    .wrapper {padding: 10px;}
+    .columns {grid-template-columns: 1fr;}
+    button[type="submit"] {width:95%;}
+}
+
+/* Custom scrollbar for textareas for "realistic" PDF/app look! */
+textarea::-webkit-scrollbar {width:7px;}
+textarea::-webkit-scrollbar-thumb {background:#e57373b2;border-radius:4px;}
+textarea::-webkit-scrollbar-track {background:transparent;}

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+.notification, .congratulations {
+    background-color: #FF5733; /* Bright red color for visibility */
+    color: white;
+    padding: 50px 20px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.notification h1 {
+    font-size: 3em;
+}
+
+.notification h2 {
+    font-size: 2em;
+}
+
+.congratulations h1 {
+    font-size: 3em;
+}
+
+.congratulations h2 {
+    font-size: 2em;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #FF5733;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #FF5733;
+    color: white;
+}
+
+.visit-website {
+    background-color: #28a745;
+    color: white;
+}
+
+.visit-website:hover {
+    background-color: #218838;
+}
+
+.sign-in {
+    background-color: #007bff;
+    color: white;
+}
+
+.sign-in:hover {
+    background-color: #0056b3;
+}
